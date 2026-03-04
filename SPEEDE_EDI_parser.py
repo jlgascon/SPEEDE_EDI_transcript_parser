@@ -103,6 +103,7 @@ if __name__ == "__main__":
         
         # Optional: Export to CSV for later database ingestion
         # results_df.to_csv('classified_transcripts.csv', index=False)
+        # COULD ALSO ADD SQL or WHATEVER needed by downstream report production (ie INFORMER)
         
     except FileNotFoundError:
         print(f"Error: Could not locate {file_path}. Please ensure the file is in the correct directory.")
