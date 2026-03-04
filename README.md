@@ -7,7 +7,7 @@ This Python script automates the parsing of raw SPEEDE/EDI transcript text files
 
 ## Features
 
-> Block-Restricted Parsing: Safely extracts the Agency's Student Number exclusively from the Student Information header to prevent capturing irrelevant numerical data.
+> Block-Restricted Parsing: Safely extracts the Agency's Student Number exclusively from the Student Information header to prevent capturing irrelevant numerical data, will be adjusted to pull Agency Student Number when there is no Student Information header. 
 
 > Status Classification: Evaluates academic records to flag transcripts as Complete, In-Progress, or Incomplete / Withdrawn by detecting specific grading strings (e.g., INP, --) and degree indicators.
 
