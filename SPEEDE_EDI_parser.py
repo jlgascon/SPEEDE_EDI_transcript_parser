@@ -22,6 +22,12 @@ def parse_edi_transcripts(text_content):
         
         # --- 3. Block-Restricted Parsing for Student Information ---
         # Isolate the specific Student Information block to safely extract IDs and Names
+
+        # I WILL DEPRECIATE THIS, JUST A FIRST ROUND , doesnt give us the correct header drill down to create the right keyvalue pairs later
+        # Also need to double check that when we append to dictionary, we keep each record line straight (when students have multiple transcripts such that Agency ID is 
+        # successfully extracted - keep the drill down clean
+
+        
         student_info_match = re.search(
             r'----------------------------- Student Information ------------------------------(.*?)-----------------------------', 
             block, 
